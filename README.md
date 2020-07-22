@@ -2,6 +2,11 @@
 
 Join us to learn more on raspberry pi and make some apps using .NET CORE 3.x, self hosted it, and run it in the PI itself. **Mari Mari MARI!!!!** 
 
+## Publish .NET Core App for Raspberry Pi
+To compile and publish for Raspberry Pi apps (MUST be in RELEASE MODE), we need to use the following command to build it
+
+    dotnet publish -r linux-arm --self-contained true
+
 
 # Files
 
