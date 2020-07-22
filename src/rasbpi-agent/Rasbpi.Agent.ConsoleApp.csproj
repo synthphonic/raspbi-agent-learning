@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>rasbpi_agent</RootNamespace>
+    <RootNamespace>Rasbpi.Agent.ConsoleApp</RootNamespace>
     <RuntimeIdentifiers>linux-arm;osx.10.14-x64</RuntimeIdentifiers>
   </PropertyGroup>
 

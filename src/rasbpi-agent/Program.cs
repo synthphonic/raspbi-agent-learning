@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace rasbpi_agent
+namespace Rasbpi.Agent.ConsoleApp
 {
 	class Program
 	{
