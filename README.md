@@ -3,10 +3,16 @@
   
 
 Join us to learn more on raspberry pi and make some apps using 
-1. .NET CORE 3.x
-2. Learn how to build and publish self hosting .NET Core apps on linux arm environment (on full linux desktop and Raspberry Pi), and run it in the PI itself. ****Mari Mari MARI!!!!****
-3. Learn how to implement some basic WebApi using .NET Core
-4. Learn how to implement some basic WebApi using Python
+#### .NET Core 3.x
+* Learn how to build and publish self hosting .NET Core app on Raspberry Pi and run it in the PI itself. 
+* Learn how to run .NET Core webapi app using Nginx as reverse proxy
+
+
+#### Python
+* Learn how to implement some basic WebApi using .NET Core
+* Learn how to implement some basic WebApi using Python
+
+****Mari Mari MARI!!!!****
 
 ## Run a simple .NET Core web app on Raspbian
 There are several ways that we can approach to run web apps or web apis' on a Raspbian OS. 
@@ -15,7 +21,7 @@ There are several ways that we can approach to run web apps or web apis' on a Ra
 
 We will try to tackle each of this
 
-### Self host .NET Core Web Api using Kestrel... the easy way
+### 1. Self host .NET Core Web Api using Kestrel... the easy way
 Follow the steps below
 1. Create a simple .NET Core Web Api project. By right you would get a WeatherForecast service in the .NET Core Web Api project template
 2. Build and publish it for linux ARM processor in release mode. We will apply self contained web app for this:
@@ -85,7 +91,7 @@ and to see the server's output log for this webapi
 journalctl -u netcore_api -f
 ```
 
-### Hosting .NET Core Web Api with Nginx in mind
+### 2. Self host .NET Core Web Api with Nginx in mind
 Install nginx
 ```
 sudo apt install nginx
@@ -133,18 +139,8 @@ sudo systemctl restart webapi-app.service
 In your Chromium brower navigate to http://127.0.0.1/swagger. You will find the webapi app is now howsted at port 80 behind nginx.
 
   
-### Configure Nginx 
-  
+## ~~ Python Stuff goes down here
 
-## Publish .NET Core App for Raspberry Pi
-
-To compile and publish for Raspberry Pi apps (MUST be in RELEASE MODE), we need to use the following command to build it
-```
- dotnet publish -r linux-arm --self-contained true
-```
-  
-  ### Make .NET Core app run as standalone in Linux systemed
-  ### lorem ipsum
 ## Resources for API Server Python
  1. Tutorial for Step by steps on developing API Server Python: [Click here](https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask)
 
