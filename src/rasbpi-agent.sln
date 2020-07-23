@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rasbpi.Agent.ConsoleApp", "rasbpi-agent\Rasbpi.Agent.ConsoleApp.csproj", "{4FAB923F-578F-4F11-886C-BBDCC1DE4899}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rasbpi.Agent.ConsoleApp", "Rasbpi.Agent.ConsoleApp\Rasbpi.Agent.ConsoleApp.csproj", "{4FAB923F-578F-4F11-886C-BBDCC1DE4899}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rasbpi.BlazorApp.Dashboard", "Rasbpi.BlazorApp.Dashboard\Rasbpi.BlazorApp.Dashboard.csproj", "{1A32CA44-E0C8-4486-8274-2F8A7E63E0B3}"
 EndProject
