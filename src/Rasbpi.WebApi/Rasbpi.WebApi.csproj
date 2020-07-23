@@ -5,7 +5,15 @@
     <RuntimeIdentifiers>linux-arm;osx.10.14-x64</RuntimeIdentifiers>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DocumentationFile>bin\Debug\netcoreapp3.1\Rasbpi.WebApi.xml</DocumentationFile>
+  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ApiEnvironment\" />
   </ItemGroup>
 </Project>
