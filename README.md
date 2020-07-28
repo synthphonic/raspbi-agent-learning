@@ -1,3 +1,4 @@
+
 # raspbi-agent-learning
 
   
@@ -142,7 +143,8 @@ In your Chromium brower navigate to http://127.0.0.1/swagger. You will find the 
 ## ~~ Python Stuff goes down here
 
 ## Resources for API Server Python
- 1. Tutorial for Step by steps on developing API Server Python: [Click here](https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask)
+ 1. Tutorial for Step by steps on developing API Server Python (Flask): [Click here](https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask)
+ 2. Tutorial to add connection to SQL Server with Flask App Python:  [Click here](https://datatofish.com/how-to-connect-python-to-sql-server-using-pyodbc/)
 
 ## Resources for File Transfer to Raspberry Pi
  Tutorial for Step by steps on transfering files to raspberry pi:
