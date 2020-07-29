@@ -142,6 +142,39 @@ In your Chromium brower navigate to http://127.0.0.1/swagger. You will find the 
   
 ## ~~ Python Stuff goes down here
 
+## How to Run Flask Python Project
+### 1. Install pip and virtualenv
+
+- [virtualenv](http://pypi.org/project/virtualenv) is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.
+- To install virtualenv to your machine via pip:
+ ```
+ pip install virtualenv
+```
+- If you do not have pip installed in your machine, you can refer to [this](https://www.shellhacks.com/python-install-pip-mac-ubuntu-centos/)
+
+### 2. Create virtual environment for your python project
+1. Go to your project directory:
+ ```
+cd <your project directory>
+```
+2. Create virtual environment using virtualenv
+ ```
+virtualenv <your desired name for virtualenv folder>
+```
+--- for example :
+ ```
+virtualenv myproject
+```
+
+3. Activate your virtual environment:
+ ```
+source <name of your virtual environment>/bin/activate
+```
+--- for example :
+ ```
+source myproject/bin/activate
+```
+
 ## Resources for API Server Python
  1. Tutorial for Step by steps on developing API Server Python (Flask): [Click here](https://programminghistorian.org/en/lessons/creating-apis-with-python-and-flask)
  2. Tutorial to add connection to SQL Server with Flask App Python:  [Click here](https://datatofish.com/how-to-connect-python-to-sql-server-using-pyodbc/)
