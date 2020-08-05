@@ -1,13 +1,13 @@
 
 const mongoose = require('mongoose');
-const config = require("../fastcut_apiserver/configuration/config.json");
+const config = require("../node-api/configuration/config.json");
 
 var express = require('express'),
   app = express(),
   port = config.port
 
 var swaggerUi = require('swagger-ui-express'),
-  swaggerDocument = require('../fastcut_apiserver/swagger.json');
+  swaggerDocument = require('../node-api/swagger.json');
 
 
 Task = require('./api/models/dataModel'),

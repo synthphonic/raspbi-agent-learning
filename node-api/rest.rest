@@ -1,0 +1,35 @@
+//MUST INSTALL REST Client Extension in order to use this
+##
+# POST  http://localhost:8000/bookings HTTP/1.1
+# content-type: application/json
+ 
+{
+"customer_name": "paan",  
+"customer_phoneNumber": "01126523032",
+"status": ["completed"],
+"addrees": "A-1-10, Green Avenue Condominium, Bukit Jalil"
+}
+
+##
+
+GET http://localhost:8000/bookings HTTP/1.1
+content-type: application/json
+
+# POST http://localhost:8000/barberShops HTTP/1.1
+# content-type: application/json
+
+# {
+# "name": "HipsterBarber",  
+# "latitude": "5.991481",
+# "longitude": "100.480890",
+# "address": "A-1-10, Green Avenue Condominium, Bukit Jalil",
+# "owner_name": "Sham"
+# }
+
+# POST http://localhost:8000/users HTTP/1.1
+# content-type: application/json
+
+# {
+# "name": "Syafisham",  
+# "email": "syafishamsalleh@gmail.com"
+# }
