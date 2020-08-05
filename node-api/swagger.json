@@ -1,0 +1,199 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Gunting API",
+    "description": "An API Interface for Gunting Mobile Application"
+  },
+  "schemes": ["http"],
+  "host": "localhost:8000",
+  "paths": {
+    "/bookings": {
+      "get": {
+        "summary": "Gets all bookings",
+        "description": "Returns a list containing all bookings.",
+        "responses": {
+          "200": {
+            "description": "A list of Bookings",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customer_name": {
+                  "type": "string"
+                },
+                "customer_phoneNumber": {
+                  "type": "number"
+                },
+                "booking_date": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "status": [{
+                    "type": "string"
+                  }]
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Insert new bookings",
+        "description": "Add new booking created by customer.",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "bookingItem",
+            "description": "Booking item to add",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "customer_name": {
+                  "type": "string"
+                },
+                "customer_phoneNumber": {
+                  "type": "number"
+                },
+                "booking_date": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "status": [{
+                  "type": "string",
+                  "example": "['pending', 'ongoing', 'completed']"
+                }]
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Booking is successfully saved"
+          }
+        }
+      }
+    },
+    "/booking": {
+      "get": {
+        "summary": "Gets booking by query",
+        "description": "Returns booking result based on query.",
+        "consumes": ["application/json"],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of bookings",
+            "schema": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "customer_name": {
+                    "type": "string"
+                  },
+                  "customer_phoneNumber": {
+                    "type": "number"
+                  },
+                  "booking_date": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "status": [{
+                    "type": "string"
+                  }]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/barberShops": {
+      "get": {
+        "summary": "Gets all Barber Shops",
+        "description": "Returns a list containing all Barber Shops",
+        "responses": {
+          "200": {
+            "description": "A list of Barber Shops",
+            "schema": {
+              "type": "array",
+              "items": {
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "created_date": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "latitude": {
+                    "type": "number"
+                  },
+                  "longitude": {
+                    "type": "number"
+                  },
+                  "address": {
+                    "type": "string"
+                  },
+                  "owner_name": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Insert new barber shop",
+        "description": "Add new shop created by barber.",
+        "consumes": ["application/json"],
+        "produces": ["application/json"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "barberShopItem",
+            "description": "BarberShop item to add",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "created_date": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "latitude": {
+                  "type": "number"
+                },
+                "longitude": {
+                  "type": "number"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "owner_name": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "BarberShop is successfully saved"
+          }
+        }
+      }
+    }
+  }
+}
