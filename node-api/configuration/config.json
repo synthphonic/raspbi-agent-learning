@@ -1,0 +1,5 @@
+{
+    "port": 8000,
+    "db_uri": "mongodb+srv://fastcut_admin:fastcut123@fastcut-tmuui.azure.mongodb.net/fastcut_db?retryWrites=true&w=majority&useNewUrlParser=true",
+    "db_name": "fastcut_db"
+}
